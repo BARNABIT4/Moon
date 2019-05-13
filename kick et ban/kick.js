@@ -1,4 +1,4 @@
-{
+bot.on("message", function(message)) {
           if (!message.guild) return
           if(!message.member.hasPermission("KICK_MEMBERS"));
           if (message.content.startsWith(".kick")) {
@@ -21,4 +21,4 @@
                 message.delete()
               }
        }
-}
+})
